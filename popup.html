@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Title Extension</title>
+    <style>
+        body {
+        width:auto;
+        font-family: Arial, sans-serif;
+        }
+    
+        .main {
+            height: auto;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 40px black;
+            background-color: #ffc8c3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    
+        #title {
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: 400;
+            color: #00203F;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+            border: 2px solid #FF6F61;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+    
+        #title:hover {
+            background-color: #f9f9f9;
+            transform: scale(1.02);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        button {
+            background: linear-gradient(135deg, #FF6F61, #D64550);
+            color: white;
+            padding: 10px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+    
+        button:hover {
+            background: linear-gradient(135deg, #D64550, #FF7F50);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+    
+        button:active {
+            transform: translateY(1px) scale(0.98);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(255, 111, 97, 0.4);
+        }
+    
+        </style>
+</head>
+<body>
+    <div class="main">
+            <button id="getTitleButton">Get Tab Title</button>
+            <div id="title"><i>Click the button to get the title</i></div>
+    </div>
+    <script src="./popup.js"></script>
+</body>
+</html>
+    
